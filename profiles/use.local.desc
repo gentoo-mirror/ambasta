@@ -1,0 +1,46 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml.
+# Please add your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+app-editors/neovim:lto - Build with Link Time Optimization (LTO)
+app-editors/neovim:nvimpager - Install nvimpager symlink to less.sh macro
+app-editors/neovim:tui - Build the neovim unix tui
+app-editors/vim:X - Link console vim against X11 libraries to enable title and clipboard features in xterm
+app-editors/vim:cscope - Enable cscope interface
+app-editors/vim:racket - Enable support for Scheme using dev-scheme/racket
+app-editors/vim:terminal - Enable terminal emulation support
+app-editors/vim:vim-pager - Install vimpager and vimmanpager links
+app-emulation/snapd:apparmor - Enable AppArmor support.
+app-emulation/snapd:cgroup-hybrid - Default to hybrid (legacy) cgroup hierarchy instead of unified (modern).
+app-emulation/snapd:forced-devmode - Automatically disable application confinement if feature detection fails.
+dev-libs/librdkafka:lz4 - Enable support for Kafka's LZ4 compression based on KIP-57 (uses app-arch/lz4)
+dev-util/clion:custom-jdk - Install and use IntelliJ's custom JRE.
+media-video/mpv:archive - Enable support for various archive formats via app-arch/libarchive
+media-video/mpv:bluray - Enable playback of Blu-ray filesystems
+media-video/mpv:cli - Build mpv CLI player
+media-video/mpv:cplugins - Enable C plugins support
+media-video/mpv:cuda - Enable hardware video decoding via Nvidia CUDA
+media-video/mpv:drm - Enable Kernel Mode Setting / Direct Rendering Manager based video output
+media-video/mpv:egl - Enable support for various EGL-based video outputs / backends
+media-video/mpv:gamepad - Enable gamepad input support
+media-video/mpv:gbm - Enable Graphics Buffer Manager based EGL video backend
+media-video/mpv:jpeg - Enable support for saving screenshots in JPEG format
+media-video/mpv:libmpv - Build mpv shared library
+media-video/mpv:lua - Enable Lua scripting, OSC (On Screen Controller) GUI and net-misc/youtube-dl hook-script
+media-video/mpv:opengl - Enable support for various OpenGL-based video backends
+media-video/mpv:raspberry-pi - Enable support for the Raspberry Pi
+media-video/mpv:rubberband - Enable high quality pitch correction via media-libs/rubberband
+media-video/mpv:sdl - Enable media-libs/libsdl2 based video and audio outputs (Note: these outputs exist for compatibility reasons only, avoid if possible)
+media-video/mpv:tools - Install extra tools: mpv_identify.sh, mpv_idet.sh, and umpv
+media-video/mpv:uchardet - Enable subtitles charset discovery via app-i18n/uchardet
+media-video/mpv:vulkan - Enable support for various Vulkan-based video backends
+media-video/mpv:zimg - Enable libzimg support (for vf_fingerprint)
+media-video/pipewire:jack - Enable SPA JACK plugin and emulation to be able to run JACK applications on top of PipeWire
+media-video/pipewire:pulseaudio - Enable emulation to be able to run PulseAudio applications on top of PipeWire
+media-video/pipewire:vulkan - Enable vulkan spa plugin integration
+net-misc/kafka-bin:internal-zookeeper - Use bundled local zookeeper instance
+sys-auth/polkit:elogind - Use sys-auth/elogind for session tracking
+sys-auth/polkit:systemd - Use sys-apps/systemd for session tracking
+www-client/firefox-bin:gmp-autoupdate - Allow Gecko Media Plugins (binary blobs) to be automatically downloaded and kept up-to-date in user profiles
+x11-libs/vte:icu - Enable legacy charset support using dev-libs/icu
+x11-libs/vte:systemd - Support moving terminal child processes to their own systemd user scopes to avoid terminal getting killed due to child causing OOM
