@@ -11,4 +11,4 @@ RESTRICT=binchecks strip
 SLOT=0
 SRC_URI=https://github.com/ambasta/cleartype-collection/archive/d1145f400523de1d19a3a0092d2df21074da085a.tar.gz -> cleartype-collection-20211204.tar.gz
 _eclasses_=font	0667878c2b594871023dd1833d05996f
-_md5_=cbf4f7b3a43355cf5a12feb36403c8c0
+_md5_=52e190e40378fd919ad325960d21fbcd
