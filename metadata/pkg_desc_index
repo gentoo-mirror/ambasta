@@ -53,7 +53,7 @@ sys-apps/brightnessctl 0.5.1: A cli tool to control display brightness
 sys-apps/flatpak 1.11.1: Linux application sandboxing and distribution framework
 sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system-wide services
 www-client/firefox 94.0.2: Firefox Web Browser
-www-client/firefox-bin 96.0.1-r1: Firefox Web Browser
+www-client/firefox-bin 96.0.2: Firefox Web Browser
 www-client/google-chrome 93.0.4577.63: The web browser from Google
 x11-libs/vte 0.62.1: Library providing a virtual terminal emulator widget
 x11-terms/foot 1.9.2: A fast, lightweight and minimalistic Wayland terminal emulator
