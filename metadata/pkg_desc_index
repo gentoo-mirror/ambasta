@@ -38,6 +38,7 @@ gui-apps/wlgreet 0.3: wlgreet
 gui-apps/wofi 1.2.4: Wofi is a launcher for wlroots based wayland compositors
 gui-libs/greetd 0.7.0: ipc based login daemon
 gui-libs/libadwaita 1.0.1: Building blocks for modern GNOME applications
+gui-libs/wlroots 0.15.1: Pluggable, composable, unopinionated modules for building a Wayland compositor
 gui-wm/sway 1.7-r1: i3-compatible Wayland window manager
 media-fonts/cleartype-collection 20211204: Microsoft's font family provided by font service
 media-libs/fcft 2.4.5: A simple library for font loading and glyph rasterization
