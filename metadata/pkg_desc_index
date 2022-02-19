@@ -58,5 +58,4 @@ www-client/firefox 94.0.2: Firefox Web Browser
 www-client/firefox-bin 97.0 97.0.1: Firefox Web Browser
 www-client/google-chrome 93.0.4577.63: The web browser from Google
 x11-libs/vte 0.62.1: Library providing a virtual terminal emulator widget
-x11-terms/foot 1.9.2: A fast, lightweight and minimalistic Wayland terminal emulator
 x11-terms/foot-terminfo 1.9.2: Terminfo for foot, wayland terminal emulator
