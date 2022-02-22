@@ -57,5 +57,6 @@ sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system
 www-client/firefox 94.0.2: Firefox Web Browser
 www-client/firefox-bin 97.0 97.0.1: Firefox Web Browser
 www-client/google-chrome 93.0.4577.63: The web browser from Google
+x11-libs/gtksourceview 5.2.0: A text widget implementing syntax highlighting and other features
 x11-libs/vte 0.62.1: Library providing a virtual terminal emulator widget
 x11-terms/foot-terminfo 1.9.2: Terminfo for foot, wayland terminal emulator
