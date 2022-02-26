@@ -61,7 +61,7 @@ SLOT="rapid"
 LICENSE="MPL-2.0 GPL-2 LGPL-2.1"
 
 IUSE="+clang cpu_flags_arm_neon dbus debug eme-free hardened hwaccel"
-IUSE+=" jack libproxy lto +openh264 pgo pulseaudio sndio selinux"
+IUSE+=" jack libproxy lto +mold +openh264 pgo pulseaudio sndio selinux"
 IUSE+=" +system-av1 +system-harfbuzz +system-icu +system-jpeg +system-libevent +system-libvpx system-png +system-webp"
 IUSE+=" wayland wifi"
 
@@ -735,14 +735,11 @@ src_configure() {
 	if use lto ; then
 		if use clang ; then
 			# Upstream only supports lld when using clang
-			mozconfig_add_options_ac "forcing ld=lld due to USE=clang and USE=lto" --enable-linker=lld
-
 			mozconfig_add_options_ac '+lto' --enable-lto=cross
 
 		else
 			# ThinLTO is currently broken, see bmo#1644409
 			mozconfig_add_options_ac '+lto' --enable-lto=full
-			mozconfig_add_options_ac "linker is set to bfd" --enable-linker=bfd
 		fi
 
 		if use pgo ; then
@@ -752,14 +749,6 @@ src_configure() {
 				# Used in build/pgo/profileserver.py
 				export LLVM_PROFDATA="llvm-profdata"
 			fi
-		fi
-	else
-		# Avoid auto-magic on linker
-		if use clang ; then
-			# This is upstream's default
-			mozconfig_add_options_ac "forcing ld=lld due to USE=clang" --enable-linker=lld
-		else
-			mozconfig_add_options_ac "linker is set to bfd" --enable-linker=bfd
 		fi
 	fi
 
