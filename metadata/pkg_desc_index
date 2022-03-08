@@ -54,7 +54,7 @@ sci-libs/libosmium 2.15.6: A fast and flexible C++ library for working with Open
 sys-apps/brightnessctl 0.5.1: A cli tool to control display brightness
 sys-apps/flatpak 1.11.1: Linux application sandboxing and distribution framework
 sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system-wide services
-www-client/chromium 101.0.4919.0: Open-source version of Google Chrome web browser
+www-client/chromium 100.0.4896.20 101.0.4919.0: Open-source version of Google Chrome web browser
 www-client/firefox 97.0.1: Firefox Web Browser
 www-client/firefox-bin 97.0.2: Firefox Web Browser
 www-client/google-chrome 93.0.4577.63: The web browser from Google
