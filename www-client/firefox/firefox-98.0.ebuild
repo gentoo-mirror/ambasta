@@ -1,7 +1,7 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="8"
+EAPI="7"
 
 LLVM_MAX_SLOT=13
 
@@ -52,6 +52,7 @@ PATCHES=(
 	"${FILESDIR}/0025-Skip-pip-check.patch"
 	"${FILESDIR}/0026-bmo-1753182-Resolve-fs-symlinks.patch"
 	"${FILESDIR}/0027-Support-for-building-firefox-without-X11.patch"
+	"${FILESDIR}/0028-Accept-mold-as-linker.patch"
 )
 
 DESCRIPTION="Firefox Web Browser"
