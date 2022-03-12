@@ -15,6 +15,10 @@ app-emulation/snapd:cgroup-hybrid - Default to hybrid (legacy) cgroup hierarchy 
 app-emulation/snapd:forced-devmode - Automatically disable application confinement if feature detection fails.
 dev-libs/librdkafka:lz4 - Enable support for Kafka's LZ4 compression based on KIP-57 (uses app-arch/lz4)
 dev-util/clion:custom-jdk - Install and use IntelliJ's custom JRE.
+media-libs/libplacebo:glslang - Use dev-util/glslang to compile GLSL
+media-libs/libplacebo:lcms - Add support for color management via media-libs/lcms
+media-libs/libplacebo:shaderc - Use media-libs/shaderc to compile GLSL
+media-libs/libplacebo:vulkan - Add support for the vulkan graphics API
 media-video/mpv:archive - Enable support for various archive formats via app-arch/libarchive
 media-video/mpv:bluray - Enable playback of Blu-ray filesystems
 media-video/mpv:cli - Build mpv CLI player
