@@ -15,4 +15,4 @@ RESTRICT=!test? ( test )
 SLOT=rapid
 SRC_URI=https://archive.mozilla.org/pub/firefox/releases/98.0/source/firefox-98.0.source.tar.xz -> firefox-98.0.source.tar.xz
 _eclasses_=gnuconfig	262062cef0ba4f22b397193da514a350	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	libtool	241a8f577b9781a42a7421e53448a44e	autotools	6cc26735fa9dd59e8c62880beda05b6e	check-reqs	bfb51de63b0462097e40436214dd43c8	desktop	c0d27bf73aa08ca05b663dbd31fbef28	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	xdg-utils	4f29a8b760a594a212abe9c2ba957c31	gnome2-utils	239e7afa214b50012f83b8bb61de7555	linux-info	2f039741fe92bcea55c78806d16ac0f5	llvm	8b7c4e5fc38650215226b5186859d0d4	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	pax-utils	fce6ad998516159787b92e8043167889	python-utils-r1	d3d7da5aff94a677154819e0cb95ee36	python-any-r1	54666a8fa603df658d9284845fc3d755	virtualx	fa024aa649b6bd544144bf94893d402c	xdg	6024fbc93167fad782e2032933654857
-_md5_=a8619f1827848efc596ccc9d1225dd9a
+_md5_=1b6463ec621a96d1bf76f554e21b4802
