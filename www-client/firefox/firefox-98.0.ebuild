@@ -20,7 +20,7 @@ MOZ_P_DISTFILES="${MOZ_PN}-${MOZ_PV_DISTFILES}"
 
 inherit autotools check-reqs desktop flag-o-matic gnome2-utils linux-info \
 	llvm multiprocessing pax-utils python-any-r1 toolchain-funcs \
-	virtualx xdg
+	virtualwl xdg
 
 MOZ_SRC_BASE_URI="https://archive.mozilla.org/pub/${MOZ_PN}/releases/${MOZ_PV}"
 
@@ -603,6 +603,7 @@ src_configure() {
 	mozconfig_use_enable sndio
 
 	mozconfig_add_options_ac '+wayland' --enable-default-toolkit=cairo-gtk3-wayland
+	mozconfig_add_options_ac '+debug' --disable-optimize
 
 	if use lto ; then
 		if use clang ; then
@@ -738,16 +739,20 @@ src_configure() {
 }
 
 src_compile() {
+	local virtwl_cmd=
+
 	if use pgo ; then
+		local virtwl_cmd=virtwl
+
 		# Reset and cleanup environment variables used by GNOME/XDG
 		gnome2_environment_reset
 
 		addpredict /root
 	fi
 
-	local -x GDK_BACKEND=x11
+	local -x GDK_BACKEND=wayland
 
-	./mach build --verbose || die
+	${virtwl_cmd} ./mach build --verbose || die
 }
 
 src_install() {
