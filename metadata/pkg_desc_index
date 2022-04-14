@@ -61,7 +61,7 @@ sys-apps/flatpak 1.11.1: Linux application sandboxing and distribution framework
 sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system-wide services
 sys-libs/glibc 2.34-r10: GNU libc C library
 www-client/chromium 100.0.4896.20 101.0.4919.0: Open-source version of Google Chrome web browser
-www-client/firefox 99.0: Firefox Web Browser
+www-client/firefox 99.0.1: Firefox Web Browser
 www-client/firefox-bin 98.0.1: Firefox Web Browser
 www-client/google-chrome 93.0.4577.63: The web browser from Google
 x11-libs/gtksourceview 5.2.0: A text widget implementing syntax highlighting and other features
