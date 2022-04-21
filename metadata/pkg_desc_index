@@ -46,7 +46,7 @@ media-libs/fcft 2.4.5: A simple library for font loading and glyph rasterization
 media-libs/graphene 1.10.2: A thin layer of types for graphic libraries
 media-libs/libplacebo 4.192.1: Reusable library for GPU-accelerated image processing primitives
 media-libs/mesa 22.0.0: OpenGL-like graphic library for Linux
-media-libs/vulkan-layers 1.3.204: Vulkan Validation Layers
+media-libs/vulkan-layers 1.3.211: Vulkan Validation Layers
 media-sound/easyeffects 6.1.0: Limiter, auto volume and many other plugins for PipeWire applications
 media-sound/volctl 0.8.0: Per-application volume control and OSD for Linux desktops.
 media-video/mpv 0.34.1: Media player based on MPlayer and mplayer2
