@@ -14,6 +14,7 @@ dev-cpp/sqlite_orm 1.6: SQLite ORM light header only library for modern C++
 dev-lang/rust 1.59.0: Systems programming language from Mozilla
 dev-libs/aws-c-cal 0.5.17: AWS Crypto Abstraction Layer
 dev-libs/aws-c-common 0.7.4: Core c99 package for AWS SDK for C
+dev-libs/aws-c-compression 0.2.14: AWS C99 Compression Algorithms
 dev-libs/aws-c-io 0.11.2: AWS Crypto Abstraction Layer
 dev-libs/bemenu 0.6.2: dmenu clone for wayland
 dev-libs/dynarmic 3: An ARM dynamic recompiler
