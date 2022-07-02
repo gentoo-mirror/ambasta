@@ -12,8 +12,8 @@ dev-cpp/quickcpplib 0.1: Quick C++ Libraries
 dev-cpp/readerwriterqueue 1.0.4: A single-producer, single-consumer lock-free queue for C++
 dev-cpp/sqlite_orm 1.6: SQLite ORM light header only library for modern C++
 dev-lang/rust 1.59.0: Systems programming language from Mozilla
+dev-libs/aws-c-common 0.7.4: Core c99 package for AWS SDK for C
 dev-libs/bemenu 0.6.2: dmenu clone for wayland
-dev-libs/cppkafka 20200304: Modern C++ Apache Kafka client library (wrapper for librdkafka)
 dev-libs/dynarmic 3: An ARM dynamic recompiler
 dev-libs/libfmt 8.0.2: Small, safe and fast formatting library
 dev-libs/librdkafka 1.6.0_rc1: Apache Kafka C/C++ client library
