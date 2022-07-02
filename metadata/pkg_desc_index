@@ -17,6 +17,7 @@ dev-libs/aws-c-common 0.7.4: Core c99 package for AWS SDK for C
 dev-libs/aws-c-compression 0.2.14: AWS C99 Compression Algorithms
 dev-libs/aws-c-http 0.6.17: AWS C99 implementation of the HTTP/1.1 and HTTP/2 specifications
 dev-libs/aws-c-io 0.11.2: AWS C99 IO library
+dev-libs/aws-c-mqtt 0.7.10: AWS C99 implementation of the MQTT 3.1.1 specification.
 dev-libs/bemenu 0.6.2: dmenu clone for wayland
 dev-libs/dynarmic 3: An ARM dynamic recompiler
 dev-libs/libfmt 8.0.2: Small, safe and fast formatting library
