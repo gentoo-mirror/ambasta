@@ -2,15 +2,8 @@ app-editors/neovim 0.6.0_alpha544: Vim-fork focused on extensibility and agility
 app-editors/vim 8.2.0814 8.2.0814-r100: Vim, an improved vi-style text editor
 app-emulation/snapd 2.54.3: Service and tools for management of snap packages
 app-misc/asciinema 2.0.2: Command line recorder for asciinema.org service
-dev-cpp/CLI11 1.9.2: Command line parser for C++11
-dev-cpp/concurrentqueue 1.0.3: An industrial-strength lock-free queue for C++
-dev-cpp/gflags 2.2.2: Google's C++ argument parsing library
 dev-cpp/gtkmm 4.2.0: C++ interface for GTK+
 dev-cpp/nlohmann_json 3.11.0: JSON for Modern C++
-dev-cpp/oneTBB 2021.3.0: High level abstract threading library
-dev-cpp/quickcpplib 0.1: Quick C++ Libraries
-dev-cpp/readerwriterqueue 1.0.4: A single-producer, single-consumer lock-free queue for C++
-dev-cpp/sqlite_orm 1.6: SQLite ORM light header only library for modern C++
 dev-lang/rust 1.59.0: Systems programming language from Mozilla
 dev-libs/aws-c-cal 0.5.17: AWS Crypto Abstraction Layer
 dev-libs/aws-c-common 0.7.4: Core c99 package for AWS SDK for C
@@ -19,10 +12,8 @@ dev-libs/aws-c-http 0.6.17: AWS C99 implementation of the HTTP/1.1 and HTTP/2 sp
 dev-libs/aws-c-io 0.11.2: AWS C99 IO library
 dev-libs/aws-c-mqtt 0.7.10: AWS C99 implementation of the MQTT 3.1.1 specification.
 dev-libs/bemenu 0.6.2: dmenu clone for wayland
-dev-libs/dynarmic 3: An ARM dynamic recompiler
 dev-libs/libfmt 8.0.2: Small, safe and fast formatting library
 dev-libs/librdkafka 1.6.0_rc1: Apache Kafka C/C++ client library
-dev-libs/protozero 1.7.0: Minimalistic protocol buffer decoder and encoder in C++
 dev-libs/s2n-tls 1.3.15: AWS s2n-tls is a C99 implementation of the TLS/SSL protocols
 dev-libs/sdbus-c++ 0.8.1: High-level C++ D-Bus library for Linux designed to provide easy-to-use yet powerful API in modern C++
 dev-libs/tllist 1.0.5: A C header file only implementation of a typed linked list.
@@ -62,7 +53,6 @@ net-irc/srain 1.3.0: Modern, beautiful IRC client written in GTK+ 3
 net-libs/libpsl 0.21.1: C library for the Public Suffix List
 net-libs/nodejs 18.4.0 18.6.0-r1: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-misc/kafka-bin 3.1.0-r1: A high-throughput distributed messaging system
-sci-libs/libosmium 2.15.6: A fast and flexible C++ library for working with OpenStreetMap data.
 sys-apps/brightnessctl 0.5.1: A cli tool to control display brightness
 sys-apps/flatpak 1.11.1: Linux application sandboxing and distribution framework
 sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system-wide services
