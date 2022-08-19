@@ -3,6 +3,7 @@ app-editors/vim 8.2.0814 8.2.0814-r100: Vim, an improved vi-style text editor
 app-emulation/snapd 2.54.3: Service and tools for management of snap packages
 app-misc/asciinema 2.0.2: Command line recorder for asciinema.org service
 dev-cpp/concurrentqueue 1.0.3: An industrial-strength lock-free queue for C++
+dev-cpp/gflags 2.2.2: Google's C++ argument parsing library
 dev-cpp/gtkmm 4.2.0: C++ interface for GTK+
 dev-cpp/nlohmann_json 3.11.0: JSON for Modern C++
 dev-lang/rust 1.59.0: Systems programming language from Mozilla
