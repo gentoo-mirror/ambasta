@@ -15,14 +15,15 @@ app-emulation/snapd:cgroup-hybrid - Default to hybrid (legacy) cgroup hierarchy 
 app-emulation/snapd:forced-devmode - Automatically disable application confinement if feature detection fails.
 dev-lang/rust:clippy - Install clippy, Rust code linter
 dev-lang/rust:dist - Install dist tarballs (used for bootstrapping)
-dev-lang/rust:miri - Install miri, an interpreter for Rust's mid-level intermediate representation (requires USE=nightly)
-dev-lang/rust:nightly - Enable nightly (UNSTABLE) features
+dev-lang/rust:miri - Install miri, an interpreter for Rust's mid-level intermediate representation (requires USE=nightly, sometimes is broken)
+dev-lang/rust:nightly - Enable nightly (UNSTABLE) features (NOTE: it does not install nightly version, just enables features marked as nightly at time of release)
 dev-lang/rust:parallel-compiler - Build a multi-threaded rustc (experimental, not tested by upstream)
+dev-lang/rust:profiler - Build the profiler runtime and rust-demangler tool (needed for '-C profile-generate' or '-C instrument-coverage' codegen opts)
 dev-lang/rust:rls - Install rls, Rust Language Server (used with IDEs supporting RLS protocol)
 dev-lang/rust:rust-src - Install rust-src, needed by developer tools and for build-std (cross)
 dev-lang/rust:rustfmt - Install rustfmt, Rust code formatter
 dev-lang/rust:system-bootstrap - Bootstrap using installed rust compiler
-dev-lang/rust:system-llvm - Use the system LLVM install
+dev-lang/rust:system-llvm - Use the system LLVM installation
 dev-lang/rust:wasm - Build support for the wasm32-unknown-unknown target
 dev-libs/librdkafka:lz4 - Enable support for Kafka's LZ4 compression based on KIP-57 (uses app-arch/lz4)
 dev-util/clion:custom-jdk - Install and use IntelliJ's custom JRE.
@@ -30,17 +31,14 @@ media-libs/libplacebo:glslang - Use dev-util/glslang to compile GLSL
 media-libs/libplacebo:lcms - Add support for color management via media-libs/lcms
 media-libs/libplacebo:shaderc - Use media-libs/shaderc to compile GLSL
 media-libs/libplacebo:vulkan - Add support for the vulkan graphics API
-media-libs/mesa:classic - Build drivers based on the classic architecture.
 media-libs/mesa:d3d9 - Enable Direct 3D9 API through Nine state tracker. Can be used together with patched wine.
-media-libs/mesa:egl - Enable EGL support.
-media-libs/mesa:gallium - Build drivers based on Gallium3D, the new architecture for 3D graphics drivers.
-media-libs/mesa:gbm - Enable the Graphics Buffer Manager for EGL on KMS.
 media-libs/mesa:gles1 - Enable GLESv1 support.
 media-libs/mesa:gles2 - Enable GLESv2 support.
 media-libs/mesa:llvm - Enable LLVM backend for Gallium3D.
 media-libs/mesa:lm-sensors - Enable Gallium HUD lm-sensors support.
 media-libs/mesa:opencl - Enable the Clover Gallium OpenCL state tracker.
 media-libs/mesa:osmesa - Build the Mesa library for off-screen rendering.
+media-libs/mesa:proprietary-codecs - Enable codecs for patent-encumbered audio and video formats.
 media-libs/mesa:valgrind - Compile in valgrind memory hints
 media-libs/mesa:vdpau - Enable the VDPAU acceleration interface for the Gallium3D Video Layer.
 media-libs/mesa:vulkan - Enable Vulkan drivers
@@ -76,23 +74,24 @@ net-misc/kafka-bin:connect - Install init for Kafka Connect Distributed mode
 net-misc/kafka-bin:internal-zookeeper - Use bundled local zookeeper instance
 sys-auth/polkit:elogind - Use sys-auth/elogind for session tracking
 sys-auth/polkit:systemd - Use sys-apps/systemd for session tracking
-www-client/chromium:component-build - Split build into more shared libraries to speed up linking. Mostly intended for debugging and development, NOT RECOMMENDED for general use.
-www-client/chromium:debug - Enable DCHECK feature with severity configurable at runtime. Mostly intended for debugging and development, NOT RECOMMENDED for general use.
-www-client/chromium:gtk4 - Build with GTK4 headers.
-www-client/chromium:hangouts - Enable support for Google Hangouts features such as screen sharing
-www-client/chromium:headless - Build Ozone only with headless backend, NOT RECOMMENDED for general use.
-www-client/chromium:js-type-check - Enable JavaScript type-checking for Chrome's web technology-based UI. Requires Java.
-www-client/chromium:libcxx - Use bundled libc++ instead of libstdc++ for building.
-www-client/chromium:official - Enable Official build instead of Developer build.
-www-client/chromium:pic - Disable optimized assembly code that is not PIC friendly
-www-client/chromium:proprietary-codecs - Enable codecs for patent-encumbered audio and video formats.
-www-client/chromium:screencast - Enable support for remote desktop and screen cast using media-video/pipewire
-www-client/chromium:suid - Build the SUID sandbox, which is only needed on CONFIG_USER_NS=n kernels
-www-client/chromium:system-ffmpeg - Use system ffmpeg instead of the bundled one
-www-client/chromium:system-harfbuzz - Use system harfbuzz instead of the bundled one.
-www-client/chromium:system-icu - Use system icu instead of the bundled one
-www-client/chromium:system-png - Use system libpng instead of the bundled one.
-www-client/chromium:widevine - Unsupported closed-source DRM capability (required by Netflix VOD)
-www-client/firefox-bin:gmp-autoupdate - Allow Gecko Media Plugins (binary blobs) to be automatically downloaded and kept up-to-date in user profiles
+www-client/firefox:clang - Use Clang compiler instead of GCC
+www-client/firefox:eme-free - Disable EME (DRM plugin) capability at build time
+www-client/firefox:geckodriver - Enable WebDriver support
+www-client/firefox:gmp-autoupdate - Allow Gecko Media Plugins (binary blobs) to be automatically downloaded and kept up-to-date in user profiles
+www-client/firefox:hwaccel - Force-enable hardware-accelerated rendering (Mozilla bug 594876)
+www-client/firefox:libproxy - Enable libproxy support
+www-client/firefox:lto - Enable Link Time Optimization (LTO) - Uses BFD linker with GCC and LLD linker with Clang
+www-client/firefox:openh264 - Use media-libs/openh264 for H264 support instead of downloading binary blob from Mozilla at runtime
+www-client/firefox:pgo - Add support for profile-guided optimization for faster binaries - this option will double the compile time
+www-client/firefox:sndio - Enable support for the media-sound/sndio backend
+www-client/firefox:system-av1 - Use the system-wide media-libs/dav1d and media-libs/libaom library instead of bundled
+www-client/firefox:system-harfbuzz - Use the system-wide media-libs/harfbuzz and media-gfx/graphite2 instead of bundled
+www-client/firefox:system-icu - Use the system-wide dev-libs/icu instead of bundled
+www-client/firefox:system-jpeg - Use the system-wide media-libs/libjpeg-turbo instead of bundled
+www-client/firefox:system-libevent - Use the system-wide dev-libs/libevent instead of bundled
+www-client/firefox:system-libvpx - Use the system-wide media-libs/libvpx instead of bundled
+www-client/firefox:system-png - Use the system-wide media-libs/libpng instead of bundled (requires APNG patches)
+www-client/firefox:system-python-libs - Use system's python site instead of bundled python libraries
+www-client/firefox:system-webp - Use the system-wide media-libs/libwebp instead of bundled
 x11-libs/vte:icu - Enable legacy charset support using dev-libs/icu
 x11-libs/vte:systemd - Support moving terminal child processes to their own systemd user scopes to avoid terminal getting killed due to child causing OOM
