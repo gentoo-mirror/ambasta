@@ -73,7 +73,7 @@ LLVM_DEPEND+=" )
 # most of the time previous versions fail to bootstrap with newer
 # for example 1.47.x, requires at least 1.46.x, 1.47.x is ok,
 # but it fails to bootstrap with 1.48.x
-# https://github.com/rust-lang/rust/blob/${PV}/src/stage0.txt
+# https://github.com/rust-lang/rust/blob/${PV}/src/stage0.json
 RUST_DEP_PREV="$(ver_cut 1).$(($(ver_cut 2) - 1))*"
 RUST_DEP_CURR="$(ver_cut 1).$(ver_cut 2)*"
 BOOTSTRAP_DEPEND="||
@@ -148,6 +148,7 @@ QA_SONAME="
 
 QA_PRESTRIPPED="
 	usr/lib/${PN}/${PV}/lib/rustlib/.*/bin/rust-llvm-dwp
+	usr/lib/${PN}/${PV}/lib/rustlib/.*/lib/self-contained/crtn.o
 "
 
 # An rmeta file is custom binary format that contains the metadata for the crate.
@@ -163,6 +164,7 @@ VERIFY_SIG_OPENPGP_KEY_PATH=${BROOT}/usr/share/openpgp-keys/rust.asc
 PATCHES=(
 	"${FILESDIR}"/1.55.0-ignore-broken-and-non-applicable-tests.patch
 	"${FILESDIR}"/1.62.1-musl-dynamic-linking.patch
+	"${FILESDIR}"/${PV}-vendor-rustix-sparc-has-no-SIGSTKFLT.patch
 )
 
 S="${WORKDIR}/${MY_P}-src"
@@ -270,6 +272,16 @@ esetup_unwind_hack() {
 }
 
 src_prepare() {
+	# this supidity is needed because patch is too large to be in filesdir
+	# and if we move it to devspace - it lacks checksum for sig verification
+	if [[ "${PV}" == 1.64.0 ]]; then
+			sed -i \
+			-e 's/516ba32a547b46a8e80ad20d4a17bf24a00bff0b69b74f56df119f770f3dfff6/fc7eb88c2f5104865379128b76767d36ce5b5fdb9f3483e683d150e514ebc3a3/' \
+			-e 's/fba10dc8ca9eaf4d481cb82bd1540cf5c05620533c44f917c09a22ea55ef408c/9cc4d1b4511a1f0d91231eb0f11c67ae5e8e38e4becd0bf5eb9e26d043796056/' \
+			vendor/rustix/.cargo-checksum.json || die
+	else
+		die "remove sed mr forgetful maintainer"
+	fi
 	if ! use system-bootstrap; then
 		has_version sys-devel/gcc || esetup_unwind_hack
 		local rust_stage0_root="${WORKDIR}"/rust-stage0
@@ -283,14 +295,13 @@ src_prepare() {
 }
 
 src_configure() {
-	use system-llvm && filter-flags '-flto*' # https://bugs.gentoo.org/862109
+	filter-flags '-flto*' # https://bugs.gentoo.org/862109 https://bugs.gentoo.org/866231
 
 	local rust_target="" rust_targets="" arch_cflags use_libcxx="false"
-	local chost_target="$(get_abi_CHOST ${v##*.})"
 
 	# Collect rust target names to compile standard libs for all ABIs.
 	for v in $(multilib_get_enabled_abi_pairs); do
-		rust_targets+=",\"$(rust_abi ${chost_target})\""
+		rust_targets+=",\"$(rust_abi $(get_abi_CHOST ${v##*.}))\""
 	done
 	if use wasm; then
 		rust_targets+=",\"wasm32-unknown-unknown\""
