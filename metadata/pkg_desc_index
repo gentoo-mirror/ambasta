@@ -9,7 +9,7 @@ dev-cpp/gtkmm 4.2.0: C++ interface for GTK+
 dev-cpp/nlohmann_json 3.11.0: JSON for Modern C++
 dev-cpp/readerwriterqueue 1.0.6: A single-producer, single-consumer lock-free queue for C++
 dev-cpp/sqlite_orm 1.7.1: SQLite ORM light header only library for modern C++
-dev-lang/rust 1.64.0: Systems programming language from Mozilla
+dev-lang/rust 1.64.0-r1: Systems programming language from Mozilla
 dev-libs/aws-c-cal 0.5.17: AWS Crypto Abstraction Layer
 dev-libs/aws-c-common 0.7.4: Core c99 package for AWS SDK for C
 dev-libs/aws-c-compression 0.2.14: AWS C99 Compression Algorithms
