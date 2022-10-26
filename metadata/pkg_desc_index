@@ -59,6 +59,6 @@ sys-apps/brightnessctl 0.5.1: A cli tool to control display brightness
 sys-apps/flatpak 1.11.1: Linux application sandboxing and distribution framework
 sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system-wide services
 sys-libs/glibc 2.34-r10: GNU libc C library
-www-client/firefox 106.0: Firefox Web Browser
+www-client/firefox 106.0.1: Firefox Web Browser
 x11-libs/gtksourceview 5.2.0: A text widget implementing syntax highlighting and other features
 x11-libs/vte 0.62.1: Library providing a virtual terminal emulator widget
