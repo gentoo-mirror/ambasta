@@ -1,6 +1,5 @@
 app-editors/neovim 0.8.0_pre: Vim-fork focused on extensibility and agility
 app-editors/vim 8.2.0814 8.2.0814-r100: Vim, an improved vi-style text editor
-app-emulation/snapd 2.54.3: Service and tools for management of snap packages
 app-misc/asciinema 2.0.2: Command line recorder for asciinema.org service
 dev-cpp/CLI11 2.2: Command line parser for C++11
 dev-cpp/concurrentqueue 1.0.3: An industrial-strength lock-free queue for C++
