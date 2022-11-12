@@ -3,7 +3,7 @@
 
 EAPI=8
 
-FIREFOX_PATCHSET="firefox-106-patches-02j.tar.xz"
+FIREFOX_PATCHSET="firefox-106-patches-03j.tar.xz"
 
 LLVM_MAX_SLOT=15
 
@@ -109,6 +109,7 @@ BDEPEND="${PYTHON_DEPS}
 	)
 	amd64? ( >=dev-lang/nasm-2.14 )
 	x86? ( >=dev-lang/nasm-2.14 )
+	mold? ( sys-devel/mold )
 	pgo? (
 		X? (
 			x11-base/xorg-server[xvfb]
@@ -807,7 +808,7 @@ src_configure() {
 		if use clang ; then
 			# Upstream only supports lld when using clang
 			if use mold; then
-				mozconfig_add_options_ac "forcing ld=mold due to USE=clang and USE=lto" --enable-linker=mold
+				mozconfig_add_options_ac "forcing ld=mold due to USE=clang and USE=lto and USE=mold" --enable-linker=mold
 			else
 				mozconfig_add_options_ac "forcing ld=lld due to USE=clang and USE=lto" --enable-linker=lld
 			fi
@@ -837,7 +838,7 @@ src_configure() {
 		if use clang ; then
 			if use mold; then
 				# This is upstream's default
-				mozconfig_add_options_ac "forcing ld=mold due to USE=clang" --enable-linker=mold
+				mozconfig_add_options_ac "forcing ld=mold due to USE=clang and USE=mold" --enable-linker=mold
 			else
 				# This is upstream's default
 				mozconfig_add_options_ac "forcing ld=lld due to USE=clang" --enable-linker=lld
