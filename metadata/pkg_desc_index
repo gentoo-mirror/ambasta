@@ -56,6 +56,7 @@ net-libs/nodejs 18.4.0 18.6.0-r1: A JavaScript runtime built on Chrome's V8 Java
 net-misc/kafka-bin 3.1.0-r1: A high-throughput distributed messaging system
 sys-apps/brightnessctl 0.5.1: A cli tool to control display brightness
 sys-apps/flatpak 1.11.1: Linux application sandboxing and distribution framework
+sys-auth/pambase 20220214: PAM base configuration files
 sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system-wide services
 sys-libs/glibc 2.34-r10: GNU libc C library
 www-client/firefox 107.0: Firefox Web Browser
