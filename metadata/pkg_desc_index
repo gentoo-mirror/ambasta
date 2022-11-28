@@ -29,6 +29,7 @@ dev-python/pyalsa 1.1.6-r1: Python bindings for ALSA library
 dev-python/pynvim 0.4.2: Python client for Neovim
 dev-util/clion 2020.3.1-r1: A complete toolset for C and C++ development
 dev-util/eclipse-sdk-bin 2019.03: Eclipse SDK
+dev-util/gn 0.2050: GN is a meta-build system that generates build files for Ninja
 dev-util/rust-analyzer 20220808: Modular compiler frontend for the Rust language
 dev-util/webstorm 2018.3.1.183.4588.29: JavaScript IDE for client- and server-side development with Node.js
 gnome-base/gnome-desktop 40.2: Library with common API for various GNOME modules
