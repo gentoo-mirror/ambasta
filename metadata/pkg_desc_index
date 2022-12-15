@@ -35,6 +35,7 @@ dev-util/webstorm 2018.3.1.183.4588.29: JavaScript IDE for client- and server-si
 gnome-base/gnome-desktop 40.2: Library with common API for various GNOME modules
 gnome-base/gsettings-desktop-schemas 40_beta: Collection of GSettings schemas for GNOME desktop
 gnome-extra/zenity 3.32.0: Tool to display dialogs from the commandline and shell scripts
+gui-apps/foot 1.13.1: Fast, lightweight and minimalistic Wayland terminal emulator
 gui-apps/slurp 1.3.2: Select a region in a Wayland compositor and print it to the standard output.
 gui-apps/wlgreet 0.4: wlgreet
 gui-apps/wofi 1.2.4: Wofi is a launcher for wlroots based wayland compositors
