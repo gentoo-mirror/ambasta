@@ -1,0 +1,15 @@
+BDEPEND=dev-lang/swig >=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=libsodium? ( dev-libs/libsodium ) lz4? ( app-arch/lz4 ) python? ( dev-lang/python ) snappy? ( app-arch/snappy ) zlib? ( sys-libs/zlib ) zstd? ( app-arch/zstd )
+DESCRIPTION=High performance, scalable, production quality, NoSQL platform
+EAPI=8
+HOMEPAGE=https://source.wiredtiger.com/
+INHERIT=cmake
+IUSE=debug libsodium lz4 pic python snappy static-libs tests zlib zstd
+KEYWORDS=~amd64
+LICENSE=SSPL-1
+RDEPEND=libsodium? ( dev-libs/libsodium ) lz4? ( app-arch/lz4 ) python? ( dev-lang/python ) snappy? ( app-arch/snappy ) zlib? ( sys-libs/zlib ) zstd? ( app-arch/zstd )
+SLOT=0
+SRC_URI=https://github.com/wiredtiger/wiredtiger/archive/refs/tags/11.1.0.tar.gz -> wiredtiger-11.1.0.tar.gz
+_eclasses_=toolchain-funcs	37a4612ce5522df5a100359a8dbc8491	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	8ed38f92fe095be374d6c4c8d4c0dda7	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	646b7a2a63596361551a6c1fabf28057
+_md5_=a705d802bfbf4d91172c3df4bae37039
