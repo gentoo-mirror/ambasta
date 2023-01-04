@@ -1,3 +1,4 @@
+app-admin/webapp-config 1.55-r2: Gentoo's installer for web-based applications
 app-crypt/gcr 3.41.1-r1: Libraries for cryptographic UIs and accessing PKCS#11 modules
 app-editors/neovim 0.8.0_pre: Vim-fork focused on extensibility and agility
 app-editors/vim 8.2.0814 8.2.0814-r100: Vim, an improved vi-style text editor
