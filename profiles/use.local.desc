@@ -3,6 +3,8 @@
 # * generated automatically using pmaint *
 
 app-admin/webapp-config:portage - Propagate python_targets dependencies to sys-apps/portage
+app-containers/crun:bpf - Enable in Kernel, eBPF (enhanced Berkley Packet Filter) support for managing device controllers.
+app-containers/crun:criu - Enable CRIU based checkpoint/restore support
 app-editors/vim:X - Link console vim against X11 libraries to enable title and clipboard features in xterm
 app-editors/vim:cscope - Enable cscope interface
 app-editors/vim:racket - Enable support for Scheme using dev-scheme/racket
