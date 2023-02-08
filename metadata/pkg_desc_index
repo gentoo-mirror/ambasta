@@ -41,7 +41,7 @@ gui-apps/foot 1.13.1: Fast, lightweight and minimalistic Wayland terminal emulat
 gui-apps/slurp 1.3.2: Select a region in a Wayland compositor and print it to the standard output.
 gui-apps/wlgreet 0.4: wlgreet
 gui-apps/wofi 1.2.4: Wofi is a launcher for wlroots based wayland compositors
-gui-libs/greetd 0.7.0: ipc based login daemon
+gui-libs/greetd 0.9.0: ipc based login daemon
 gui-libs/libadwaita 1.0.1: Building blocks for modern GNOME applications
 gui-libs/wlroots 0.15.1: Pluggable, composable, unopinionated modules for building a Wayland compositor
 gui-wm/sway 1.8_rc2 1.8_rc3: i3-compatible Wayland window manager
