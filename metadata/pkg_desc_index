@@ -12,7 +12,7 @@ dev-cpp/nlohmann_json 3.11.0: JSON for Modern C++
 dev-cpp/readerwriterqueue 1.0.6: A single-producer, single-consumer lock-free queue for C++
 dev-cpp/sqlite_orm 1.7.1: SQLite ORM light header only library for modern C++
 dev-java/java-config 2.3.1: Java environment configuration query tool
-dev-lang/rust 1.68.0-r1 1.68.1-r1: Systems programming language from Mozilla
+dev-lang/rust 1.68.1-r1 1.68.2: Systems programming language from Mozilla
 dev-libs/aws-c-cal 0.5.17: AWS Crypto Abstraction Layer
 dev-libs/aws-c-common 0.7.4: Core c99 package for AWS SDK for C
 dev-libs/aws-c-compression 0.2.14: AWS C99 Compression Algorithms
@@ -64,7 +64,7 @@ sys-apps/flatpak 1.11.1: Linux application sandboxing and distribution framework
 sys-auth/pambase 20220214: PAM base configuration files
 sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system-wide services
 sys-libs/glibc 2.34-r10: GNU libc C library
-virtual/rust 1.68.0-r1 1.68.1-r1: Virtual for Rust language compiler
+virtual/rust 1.68.1-r1 1.68.2: Virtual for Rust language compiler
 www-client/chromium 111.0.5563.64: Open-source version of Google Chrome web browser
 www-client/firefox 110.0.1 111.0 111.0-r1: Firefox Web Browser
 x11-libs/gtksourceview 5.2.0: A text widget implementing syntax highlighting and other features
