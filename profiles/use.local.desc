@@ -5,11 +5,6 @@
 app-admin/webapp-config:portage - Propagate python_targets dependencies to sys-apps/portage
 app-containers/crun:bpf - Enable in Kernel, eBPF (enhanced Berkley Packet Filter) support for managing device controllers.
 app-containers/crun:criu - Enable CRIU based checkpoint/restore support
-app-editors/vim:X - Link console vim against X11 libraries to enable title and clipboard features in xterm
-app-editors/vim:cscope - Enable cscope interface
-app-editors/vim:racket - Enable support for Scheme using dev-scheme/racket
-app-editors/vim:terminal - Enable terminal emulation support
-app-editors/vim:vim-pager - Install vimpager and vimmanpager links
 dev-libs/librdkafka:lz4 - Enable support for Kafka's LZ4 compression based on KIP-57 (uses app-arch/lz4)
 dev-util/clion:custom-jdk - Install and use IntelliJ's custom JRE.
 media-libs/libplacebo:glslang - Use dev-util/glslang to compile GLSL
