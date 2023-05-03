@@ -60,5 +60,4 @@ sys-libs/glibc 2.34-r10: GNU libc C library
 virtual/rust 1.68.2-r1 1.69.0: Virtual for Rust language compiler
 www-client/chromium 111.0.5563.64: Open-source version of Google Chrome web browser
 www-client/firefox 110.0.1 111.0 111.0-r1 112.0 112.0.1 112.0.2: Firefox Web Browser
-x11-libs/gtksourceview 5.2.0: A text widget implementing syntax highlighting and other features
 x11-libs/vte 0.62.1: Library providing a virtual terminal emulator widget
