@@ -5,7 +5,6 @@
 app-admin/webapp-config:portage - Propagate python_targets dependencies to sys-apps/portage
 app-containers/crun:bpf - Enable in Kernel, eBPF (enhanced Berkley Packet Filter) support for managing device controllers.
 app-containers/crun:criu - Enable CRIU based checkpoint/restore support
-dev-libs/librdkafka:lz4 - Enable support for Kafka's LZ4 compression based on KIP-57 (uses app-arch/lz4)
 dev-util/clion:custom-jdk - Install and use IntelliJ's custom JRE.
 media-libs/libplacebo:glslang - Use dev-util/glslang to compile GLSL
 media-libs/libplacebo:lcms - Add support for color management via media-libs/lcms
