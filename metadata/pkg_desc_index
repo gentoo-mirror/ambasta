@@ -61,4 +61,5 @@ sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system
 sys-libs/glibc 2.34-r10: GNU libc C library
 virtual/rust 1.68.2-r1 1.69.0: Virtual for Rust language compiler
 www-client/chromium 111.0.5563.64: Open-source version of Google Chrome web browser
+www-client/firefox 116.0: Firefox Web Browser
 x11-libs/vte 0.62.1: Library providing a virtual terminal emulator widget
