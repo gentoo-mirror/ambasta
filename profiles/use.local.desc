@@ -40,6 +40,7 @@ net-misc/kafka-bin:connect - Install init for Kafka Connect Distributed mode
 net-misc/kafka-bin:internal-zookeeper - Use bundled local zookeeper instance
 sys-auth/polkit:elogind - Use sys-auth/elogind for session tracking
 sys-auth/polkit:systemd - Use sys-apps/systemd for session tracking
+sys-cluster/minikube:libvirt - Build plugin for kvm
 www-client/chromium:component-build - Split build into more shared libraries to speed up linking. Mostly intended for debugging and development, NOT RECOMMENDED for general use.
 www-client/chromium:debug - Enable DCHECK feature with severity configurable at runtime. Mostly intended for debugging and development, NOT RECOMMENDED for general use.
 www-client/chromium:gtk4 - Build with GTK4 headers.
