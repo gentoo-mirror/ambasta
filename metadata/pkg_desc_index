@@ -10,7 +10,7 @@ dev-cpp/readerwriterqueue 1.0.6: A single-producer, single-consumer lock-free qu
 dev-cpp/sqlite_orm 1.7.1: SQLite ORM light header only library for modern C++
 dev-db/postgresql 15.4: PostgreSQL RDBMS
 dev-java/java-config 2.3.1: Java environment configuration query tool
-dev-lang/rust 1.68.2 1.69.0-r1: Systems programming language from Mozilla
+dev-lang/rust 1.72.0: Systems programming language from Mozilla
 dev-libs/aws-c-cal 0.5.17: AWS Crypto Abstraction Layer
 dev-libs/aws-c-common 0.7.4: Core c99 package for AWS SDK for C
 dev-libs/aws-c-compression 0.2.14: AWS C99 Compression Algorithms
@@ -61,5 +61,5 @@ sys-cluster/minikube 1.31.2: Single Node Kubernetes Cluster
 sys-libs/glibc 2.34-r10: GNU libc C library
 virtual/rust 1.68.2-r1 1.69.0: Virtual for Rust language compiler
 www-client/chromium 111.0.5563.64: Open-source version of Google Chrome web browser
-www-client/firefox 116.0: Firefox Web Browser
+www-client/firefox 117.0.1: Firefox Web Browser
 x11-libs/vte 0.62.1: Library providing a virtual terminal emulator widget
