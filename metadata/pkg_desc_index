@@ -61,5 +61,5 @@ sys-cluster/minikube 1.31.2: Single Node Kubernetes Cluster
 sys-libs/glibc 2.34-r10: GNU libc C library
 virtual/rust 1.73.0_beta: Virtual for Rust language compiler
 www-client/chromium 111.0.5563.64: Open-source version of Google Chrome web browser
-www-client/firefox 117.0.1: Firefox Web Browser
+www-client/firefox 118.0_beta9: Firefox Web Browser
 x11-libs/vte 0.62.1: Library providing a virtual terminal emulator widget
