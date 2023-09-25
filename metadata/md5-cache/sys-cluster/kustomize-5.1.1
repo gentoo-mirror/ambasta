@@ -1,0 +1,13 @@
+BDEPEND=>=dev-lang/go-1.18 app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Customization of kubernetes YAML configurations
+EAPI=8
+HOMEPAGE=https://kustomize.io/
+INHERIT=bash-completion-r1 go-module toolchain-funcs
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/kubernetes-sigs/kustomize/archive/kustomize/v5.1.1.tar.gz -> kustomize-5.1.1.tar.gz https://github.com/ambasta/kustomize/releases/download/5.1.1/kustomize-5.1.1-deps.tar.xz
+_eclasses_=toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	bash-completion-r1	f5e7a020fd9c741740756aac61bf75ff	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	go-module	8624eede24936fd7666e5298e5332f22
+_md5_=0f3a85c745f20e122a43f0055d6e0e1c
