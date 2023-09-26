@@ -28,6 +28,7 @@ dev-lua/luv 1.36.0.0: Bare libuv bindings for lua
 dev-python/pynvim 0.4.2: Python client for Neovim
 dev-util/clion 2020.3.1-r1: A complete toolset for C and C++ development
 dev-util/rust-analyzer 20220808: Modular compiler frontend for the Rust language
+dev-vcs/gitlab-shell 14.28.0: SSH access for GitLab
 gnome-base/gnome-desktop 40.2: Library with common API for various GNOME modules
 gnome-base/gsettings-desktop-schemas 40_beta: Collection of GSettings schemas for GNOME desktop
 gnome-extra/zenity 3.32.0: Tool to display dialogs from the commandline and shell scripts
@@ -60,6 +61,7 @@ sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system
 sys-cluster/minikube 1.31.2: Single Node Kubernetes Cluster
 sys-libs/glibc 2.34-r10: GNU libc C library
 virtual/rust 1.73.0_beta: Virtual for Rust language compiler
+www-apps/gitlab 16.4.0: The gitlab and gitaly parts of the GitLab DevOps platform
 www-client/chromium 111.0.5563.64: Open-source version of Google Chrome web browser
 www-client/firefox 118.0_beta9: Firefox Web Browser
 x11-libs/vte 0.62.1: Library providing a virtual terminal emulator widget
