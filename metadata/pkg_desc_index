@@ -57,7 +57,6 @@ sci-libs/soplex 6.0.3: Sequential object-oriented simPlex
 sys-apps/brightnessctl 0.5.1: A cli tool to control display brightness
 sys-auth/pambase 20220214: PAM base configuration files
 sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system-wide services
-sys-cluster/kustomize 5.1.1: Customization of kubernetes YAML configurations
 sys-cluster/minikube 1.31.2: Single Node Kubernetes Cluster
 sys-libs/glibc 2.34-r10: GNU libc C library
 virtual/rust 1.73.0_beta: Virtual for Rust language compiler
