@@ -30,6 +30,7 @@ dev-libs/sdbus-c++ 0.8.1: High-level C++ D-Bus library for Linux designed to pro
 dev-libs/tllist 1.0.5: A C header file only implementation of a typed linked list.
 dev-lua/StyLua 0.11.2: An opinionated code formatter for Lua 5.1, Lua 5.2 and Luau
 dev-lua/luv 1.36.0.0: Bare libuv bindings for lua
+dev-python/awscrt 0.19.1: 
 dev-python/pynvim 0.4.2: Python client for Neovim
 dev-util/clion 2020.3.1-r1: A complete toolset for C and C++ development
 dev-util/rust-analyzer 20220808: Modular compiler frontend for the Rust language
