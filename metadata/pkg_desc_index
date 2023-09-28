@@ -12,7 +12,7 @@ dev-db/postgresql 16.0: PostgreSQL RDBMS
 dev-java/java-config 2.3.1: Java environment configuration query tool
 dev-lang/rust 1.73.0_beta: Systems programming language from Mozilla
 dev-libs/aws-c-cal 0.5.17: AWS Crypto Abstraction Layer
-dev-libs/aws-c-common 0.7.4: Core c99 package for AWS SDK for C
+dev-libs/aws-c-common 0.9.4: Core c99 package for AWS SDK for C
 dev-libs/aws-c-compression 0.2.14: AWS C99 Compression Algorithms
 dev-libs/aws-c-http 0.6.17: AWS C99 implementation of the HTTP/1.1 and HTTP/2 specifications
 dev-libs/aws-c-io 0.11.2: AWS C99 IO library
