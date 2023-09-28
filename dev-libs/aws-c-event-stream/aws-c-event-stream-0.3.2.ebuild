@@ -16,8 +16,10 @@ KEYWORDS="~amd64"
 IUSE="static-libs websockets tests"
 
 DEPEND="dev-libs/aws-c-common
+	dev-libs/aws-checksums
+	dev-libs/aws-c-cal
 	dev-libs/aws-c-io
-	dev-libs/aws-c-http"
+	dev-libs/s2n-tls"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
