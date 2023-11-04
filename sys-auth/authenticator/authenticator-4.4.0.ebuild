@@ -392,7 +392,7 @@ CRATES="
 
 # cargo must come after meson otherwise it will not respect
 # crates that we've already downloaded
-inherit meson gnome2-utils cargo
+inherit meson gnome2-utils plocale cargo
 
 DESCRIPTION="Generate Two-Factor Codes"
 HOMEPAGE="https://gitlab.gnome.org/World/Authenticator"
@@ -435,6 +435,8 @@ src_prepare() {
 	pushd "${WORKDIR}/ashpd-0.6.7" || die
 	eapply "${FILESDIR}/ashpd-x11-wayland-feature.patch"
 	popd || die
+
+	plocale_get_locales > po/LINGUAS || die
 }
 
 src_configure() {
