@@ -70,6 +70,7 @@ sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system
 sys-cluster/flux 2.1.1: Flux is a tool for keeping Kubernetes clusters in sync
 sys-cluster/minikube 1.31.2: Single Node Kubernetes Cluster
 sys-libs/glibc 2.34-r10: GNU libc C library
+virtual/opengl 7.0-r2: Virtual for OpenGL implementation
 virtual/rust 1.73.0_beta: Virtual for Rust language compiler
 www-apps/gitlab 16.4.0: The gitlab and gitaly parts of the GitLab DevOps platform
 www-client/chromium 111.0.5563.64: Open-source version of Google Chrome web browser
