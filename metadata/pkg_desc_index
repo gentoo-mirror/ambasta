@@ -1,7 +1,7 @@
 app-admin/awscli 2.13.22: Universal Command Line Environment for AWS
 app-admin/webapp-config 1.55-r2: Gentoo's installer for web-based applications
 app-containers/crun 1.7.2: A fast and low-memory footprint OCI Container Runtime fully written in C
-app-crypt/gcr 3.41.1-r1: Libraries for cryptographic UIs and accessing PKCS#11 modules
+app-crypt/gcr 3.41.1-r2: Libraries for cryptographic UIs and accessing PKCS#11 modules
 app-editors/neovim 0.8.0_pre: Vim-fork focused on extensibility and agility
 dev-cpp/CLI11 2.2: Command line parser for C++11
 dev-cpp/concurrentqueue 1.0.3: An industrial-strength lock-free queue for C++
