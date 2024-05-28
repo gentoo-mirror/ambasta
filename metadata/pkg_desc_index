@@ -64,6 +64,7 @@ sci-libs/or-tools 9.6: Google's Operations Research tools
 sci-libs/scip 8.0.3: SCIP - Solving Constraint Integer Programs
 sci-libs/soplex 6.0.3: Sequential object-oriented simPlex
 sys-apps/brightnessctl 0.5.1: A cli tool to control display brightness
+sys-apps/fwupd 1.9.20: Aims to make updating firmware on Linux automatic, safe and reliable
 sys-auth/authenticator 4.4.0: Generate Two-Factor Codes
 sys-auth/pambase 20220214: PAM base configuration files
 sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system-wide services
