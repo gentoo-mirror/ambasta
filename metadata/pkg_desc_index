@@ -52,6 +52,7 @@ media-fonts/cleartype-collection 20211204: Microsoft's font family provided by f
 media-libs/fcft 2.4.5: A simple library for font loading and glyph rasterization
 media-libs/libplacebo 4.192.1: Reusable library for GPU-accelerated image processing primitives
 media-libs/mesa 23.2.1: OpenGL-like graphic library for Linux
+media-libs/noise-suppression-for-voice 1.10: A real-time noise suppression plugin for voice
 media-sound/easyeffects 6.1.0: Limiter, auto volume and many other plugins for PipeWire applications
 media-sound/volctl 0.9.2: Per-application volume control and OSD for Linux desktops.
 media-video/mpv 0.34.1: Media player based on MPlayer and mplayer2
