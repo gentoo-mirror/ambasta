@@ -9,6 +9,7 @@ dev-cpp/gflags 2.2.2: Google's C++ argument parsing library
 dev-cpp/nlohmann_json 3.11.0: JSON for Modern C++
 dev-cpp/readerwriterqueue 1.0.6: A single-producer, single-consumer lock-free queue for C++
 dev-cpp/sqlite_orm 1.7.1: SQLite ORM light header only library for modern C++
+dev-db/pg_qualstats 2.1.0: A PostgreSQL extension for collecting statistics about predicates, helping find what indices are missing
 dev-db/postgresql 16.0: PostgreSQL RDBMS
 dev-go/gopls 0.14.0: "Go please" is the official Go language server
 dev-java/java-config 2.3.1-r1: Java environment configuration query tool

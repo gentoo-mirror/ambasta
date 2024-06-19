@@ -1,0 +1,13 @@
+BDEPEND=postgres_targets_postgres16? ( dev-db/postgresql:16=[server] ) postgres_targets_postgres15? ( dev-db/postgresql:15=[server] ) postgres_targets_postgres14? ( dev-db/postgresql:14=[server] )
+DEFINED_PHASES=compile install prepare setup test
+DESCRIPTION=A PostgreSQL extension for collecting statistics about predicates, helping find what indices are missing
+EAPI=8
+HOMEPAGE=https://github.com/powa-team/pg_qualstats
+INHERIT=postgres-multi
+IUSE=static-libs postgres_targets_postgres16 postgres_targets_postgres15 postgres_targets_postgres14
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+SLOT=0
+SRC_URI=https://github.com/powa-team/pg_qualstats/archive/2.1.0.tar.gz -> pg_qualstats-2.1.0.tar.gz
+_eclasses_=out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	d67e78a235f541871c7dfe4cf7931489	postgres	3f864368af6c0e46196e03821025f1f5	postgres-multi	7140a1e9480de59ab4172274608bffce
+_md5_=5ebd3deb9d2de14cabed41f7ecdfecfa
