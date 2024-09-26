@@ -9,5 +9,5 @@ KEYWORDS=~amd64
 LICENSE=Apache-2.0
 SLOT=0
 SRC_URI=https://github.com/powa-team/pg_qualstats/archive/2.1.0.tar.gz -> pg_qualstats-2.1.0.tar.gz
-_eclasses_=out-of-source-utils	a0eb740debe3d472355e8bc52f62e0ac	multibuild	45df57b1877333d70a9e894f6c8fdb3a	postgres	3f864368af6c0e46196e03821025f1f5	postgres-multi	7140a1e9480de59ab4172274608bffce
+_eclasses_=out-of-source-utils	a0eb740debe3d472355e8bc52f62e0ac	multibuild	45df57b1877333d70a9e894f6c8fdb3a	postgres	9df4142e5ccc7da40ed631d5f22527ce	postgres-multi	7140a1e9480de59ab4172274608bffce
 _md5_=5ebd3deb9d2de14cabed41f7ecdfecfa
