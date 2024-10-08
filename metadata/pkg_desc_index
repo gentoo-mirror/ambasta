@@ -65,8 +65,6 @@ net-irc/srain 1.3.0: Modern, beautiful IRC client written in GTK+ 3
 net-libs/libpsl 0.21.1: C library for the Public Suffix List
 net-libs/nodejs 21.7.1: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-misc/kafka-bin 3.1.0-r1: A high-throughput distributed messaging system
-net-print/foomatic-db 4.0.20240531: Printer information files for foomatic-db-engine to generate ppds
-net-print/foomatic-db-ppds 4.0.20240531: linuxprinting.org PPD files for postscript printers
 sci-libs/or-tools 9.6: Google's Operations Research tools
 sci-libs/scip 8.0.3: SCIP - Solving Constraint Integer Programs
 sci-libs/soplex 6.0.3: Sequential object-oriented simPlex
