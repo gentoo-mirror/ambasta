@@ -7,7 +7,6 @@ app-editors/neovim 0.8.0_pre: Vim-fork focused on extensibility and agility
 dev-cpp/concurrentqueue 1.0.3: An industrial-strength lock-free queue for C++
 dev-cpp/drogon 1.9.7: C++14/17 based HTTP web application framework
 dev-cpp/gflags 2.2.2: Google's C++ argument parsing library
-dev-cpp/nlohmann_json 3.11.0: JSON for Modern C++
 dev-cpp/readerwriterqueue 1.0.6: A single-producer, single-consumer lock-free queue for C++
 dev-cpp/sqlite_orm 1.7.1: SQLite ORM light header only library for modern C++
 dev-cpp/trantor 1.5.21: Non-blocking I/O tcp network lib based on c++14/17
@@ -55,7 +54,7 @@ gui-wm/sway 1.8_rc2 1.8_rc3: i3-compatible Wayland window manager
 media-fonts/cleartype-collection 20211204: Microsoft's font family provided by font service
 media-libs/fcft 2.4.5: A simple library for font loading and glyph rasterization
 media-libs/libplacebo 4.192.1: Reusable library for GPU-accelerated image processing primitives
-media-libs/mesa 23.2.1: OpenGL-like graphic library for Linux
+media-libs/mesa 24.2.5: OpenGL-like graphic library for Linux
 media-libs/noise-suppression-for-voice 1.10: A real-time noise suppression plugin for voice
 media-sound/easyeffects 6.1.0: Limiter, auto volume and many other plugins for PipeWire applications
 media-sound/volctl 0.9.2: Per-application volume control and OSD for Linux desktops.
