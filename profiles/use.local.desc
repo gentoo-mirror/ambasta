@@ -52,25 +52,5 @@ www-apps/gitlab:mail_room - Enables support for GitLab MailRoom
 www-apps/gitlab:pages - Pulls in the compatible version of www-apps/gitlab-pages
 www-apps/gitlab:prometheus - Enables support for the Prometheus monitoring system
 www-apps/gitlab:relative_url - Support for relative url
-www-client/chromium:component-build - Split build into more shared libraries to speed up linking. Mostly intended for debugging and development, NOT RECOMMENDED for general use.
-www-client/chromium:debug - Enable DCHECK feature with severity configurable at runtime. Mostly intended for debugging and development, NOT RECOMMENDED for general use.
-www-client/chromium:gtk4 - Build with GTK4 headers.
-www-client/chromium:hangouts - Enable support for Google Hangouts features such as screen sharing
-www-client/chromium:headless - Build Ozone only with headless backend, NOT RECOMMENDED for general use.
-www-client/chromium:js-type-check - Enable JavaScript type-checking for Chrome's web technology-based UI. Requires Java.
-www-client/chromium:libcxx - Use bundled libc++ instead of libstdc++ for building.
-www-client/chromium:lto - Build with Link Time Optimizations (via clang's ThinLTO)
-www-client/chromium:official - Enable Official build instead of Developer build.
-www-client/chromium:pax-kernel - Allow building on a PaX-enabled kernel
-www-client/chromium:pgo - Build with Profile Guided Optimizations (2-stage compilation)
-www-client/chromium:pic - Disable optimized assembly code that is not PIC friendly
-www-client/chromium:proprietary-codecs - Enable codecs for patent-encumbered audio and video formats.
-www-client/chromium:suid - Build the SUID sandbox, which is only needed on CONFIG_USER_NS=n kernels
-www-client/chromium:system-av1 - Use system libaom and dav1d instead of the bundled one.
-www-client/chromium:system-ffmpeg - Use system ffmpeg instead of the bundled one
-www-client/chromium:system-harfbuzz - Use system harfbuzz instead of the bundled one.
-www-client/chromium:system-icu - Use system icu instead of the bundled one
-www-client/chromium:system-png - Use system libpng instead of the bundled one.
-www-client/chromium:widevine - Unsupported closed-source DRM capability (required by Netflix VOD)
 x11-libs/vte:icu - Enable legacy charset support using dev-libs/icu
 x11-libs/vte:systemd - Support moving terminal child processes to their own systemd user scopes to avoid terminal getting killed due to child causing OOM
