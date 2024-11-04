@@ -4,6 +4,7 @@ app-containers/crun 1.11.2: A fast and low-memory footprint OCI Container Runtim
 app-crypt/gcr 3.41.1-r2: Libraries for cryptographic UIs and accessing PKCS#11 modules
 app-crypt/seahorse 43.0-r3: Manage your passwords and encryption keys
 app-editors/neovim 0.8.0_pre: Vim-fork focused on extensibility and agility
+app-emulation/amazon-ssm-agent 3.3.1230.0: AWS SSM Agent
 dev-cpp/concurrentqueue 1.0.3: An industrial-strength lock-free queue for C++
 dev-cpp/drogon 1.9.7: C++14/17 based HTTP web application framework
 dev-cpp/gflags 2.2.2: Google's C++ argument parsing library
