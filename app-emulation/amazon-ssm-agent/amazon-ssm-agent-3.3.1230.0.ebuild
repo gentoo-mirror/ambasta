@@ -1,6 +1,6 @@
 EAPI=8
 
-inherit autotools systemd
+inherit autotools go-module systemd
 
 DESCRIPTION="AWS SSM Agent"
 HOMEPAGE="https://github.com/aws/amazon-ssm-agent/"
@@ -10,15 +10,34 @@ LICENSE="Apache-2.0"
 SLOT=0
 KEYWORDS="~amd64 ~arm64"
 
-BDEPENDS="dev-lang/go"
-DEPENDS="dev-lang/go"
+BDEPEND="dev-lang/go"
+REPENDS=""
 
 src_compile() {
-	emake build-linux
+	local target
+	if use amd64; then
+		target="build-linux"
+	elif use arm64; then
+		target="build-arm64"
+	else
+		die "Unsupported architecture"
+	fi
+
+	# Compile with the correct architecture
+	emake ${target}
 }
 
 src_install() {
+	local target
+	if use amd64; then
+		target="amd64"
+	elif use arm64; then
+		target="arm64"
+	else
+		die "Unsupported architecture"
+	fi
+
 	keepdir /var/log/aws
-	dobin bin/linux_amd64/*
+	dobin bin/linux_${target}/*
 	systemd_dounit packaging/linux/amazon-ssm-agent.service
 }
