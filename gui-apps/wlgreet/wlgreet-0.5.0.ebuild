@@ -86,7 +86,7 @@ CRATES="
 RUST_MAX_VER="1.82.0"
 RUST_MIN_VER="1.71.1"
 
-inherit flag-o-matic cargo
+inherit flag-o-matic cargo rust
 
 DESCRIPTION="wlgreet"
 HOMEPAGE="https://git.sr.ht/~kennylevinsen/wlgreet"
@@ -114,6 +114,10 @@ DEPEND="${BDEPEND}
 	>=gui-libs/greetd-0.6.1
 	>=dev-libs/wayland-protocols-1.20
 "
+
+pkg_setup() {
+	rust_pkg_setup
+}
 
 src_configure() {
 	if use clang && ! tc-is-clang; then
