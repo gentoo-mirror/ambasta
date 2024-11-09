@@ -84,5 +84,5 @@ sys-power/power-profiles-daemon 0.21: Makes power profiles handling available ov
 virtual/opengl 7.0-r2: Virtual for OpenGL implementation
 virtual/rust 1.73.0_beta: Virtual for Rust language compiler
 www-apps/gitlab 16.4.0: The gitlab and gitaly parts of the GitLab DevOps platform
-www-client/firefox 124.0.1: Firefox Web Browser
+www-client/firefox 132.0.1-r1: Firefox Web Browser
 x11-libs/vte 0.62.1: Library providing a virtual terminal emulator widget
