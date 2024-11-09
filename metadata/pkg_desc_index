@@ -43,6 +43,7 @@ dev-util/clion 2020.3.1-r1: A complete toolset for C and C++ development
 dev-util/rust-analyzer 20220808: Modular compiler frontend for the Rust language
 dev-vcs/gitlab-shell 14.28.0: SSH access for GitLab
 gnome-base/gsettings-desktop-schemas 40_beta: Collection of GSettings schemas for GNOME desktop
+gnome-base/librsvg 2.59.2-r1: Scalable Vector Graphics (SVG) rendering library
 gnome-extra/zenity 3.32.0: Tool to display dialogs from the commandline and shell scripts
 gui-apps/foot 1.13.1: Fast, lightweight and minimalistic Wayland terminal emulator
 gui-apps/slurp 1.3.2: Select a region in a Wayland compositor and print it to the standard output.
