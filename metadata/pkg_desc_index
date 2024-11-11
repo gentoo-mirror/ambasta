@@ -52,7 +52,6 @@ gui-apps/wofi 1.2.4: Wofi is a launcher for wlroots based wayland compositors
 gui-libs/greetd 0.10.3: ipc based login daemon
 gui-libs/libadwaita 1.0.1: Building blocks for modern GNOME applications
 gui-libs/wlroots 0.15.1: Pluggable, composable, unopinionated modules for building a Wayland compositor
-gui-wm/sway 1.10: i3-compatible Wayland window manager
 media-fonts/cleartype-collection 20211204: Microsoft's font family provided by font service
 media-libs/fcft 2.4.5: A simple library for font loading and glyph rasterization
 media-libs/libplacebo 4.192.1: Reusable library for GPU-accelerated image processing primitives
@@ -84,5 +83,4 @@ sys-power/power-profiles-daemon 0.21: Makes power profiles handling available ov
 virtual/opengl 7.0-r2: Virtual for OpenGL implementation
 virtual/rust 1.73.0_beta: Virtual for Rust language compiler
 www-apps/gitlab 16.4.0: The gitlab and gitaly parts of the GitLab DevOps platform
-www-client/firefox 132.0.1-r1: Firefox Web Browser
 x11-libs/vte 0.62.1: Library providing a virtual terminal emulator widget
