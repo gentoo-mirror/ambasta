@@ -83,7 +83,7 @@ CRATES="
 	xml-rs@0.8.20
 "
 
-RUST_MAX_VER="1.82.0"
+RUST_MAX_VER="1.83.0"
 RUST_MIN_VER="1.71.1"
 
 inherit flag-o-matic cargo rust
@@ -102,12 +102,12 @@ IUSE="+clang"
 
 BDEPEND="
 	clang? (
-		sys-devel/clang
+		llvm-core/clang
 		|| (
-			sys-devel/lld
+			llvm-core/lld
 			sys-devel/mold
 		)
-		sys-devel/llvm
+		llvm-core/llvm
 	)
 "
 DEPEND="${BDEPEND}
