@@ -11,4 +11,4 @@ RESTRICT=bindist mirror strip
 SLOT=0
 SRC_URI=https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2024.2.1.12/android-studio-2024.2.1.12-linux.tar.gz
 _eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	wrapper	11a2a3bd712784986679b60a0cab34a0
-_md5_=c12e7e818451ac79731d0226f05c2b5c
+_md5_=82b7cd2a33ca9dc5cbbdbc66c4814f20
