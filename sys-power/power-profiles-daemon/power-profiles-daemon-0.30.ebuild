@@ -1,10 +1,10 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-PYTHON_COMPAT=(python3_{10..12})
+PYTHON_COMPAT=(python3_{10..13} python3_13t)
 
-inherit meson python-single-r1 systemd
+inherit meson python-single-r1 shell-completion systemd
 
 DESCRIPTION="Makes power profiles handling available over D-Bus"
 HOMEPAGE="https://gitlab.freedesktop.org/upower/power-profiles-daemon/"
@@ -13,17 +13,13 @@ LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
 
-IUSE="gtk-doc selinux test bash-completion zsh-completion"
+IUSE="bash-completion gtk-doc man selinux test zsh-completion"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RESTRICT="!test? ( test )"
 
 RDEPEND="${PYTHON_DEPS}
 	$(python_gen_cond_dep 'dev-python/pygobject:3[${PYTHON_USEDEP}]')
-	bash-completion? (
-		>=app-shells/bash-completion-2.0
-		dev-python/shtab
-	)
 	dev-libs/glib:2
 	>=dev-libs/libgudev-234
 	>=sys-auth/polkit-0.99
@@ -33,17 +29,26 @@ RDEPEND="${PYTHON_DEPS}
 DEPEND="${RDEPEND}"
 BDEPEND="
 	dev-util/glib-utils
+	bash-completion? (
+		>=app-shells/bash-completion-2.0
+		$(python_gen_cond_dep '>=dev-python/shtab-1.7.0[${PYTHON_USEDEP}]')
+	)
 	gtk-doc? (
 		dev-util/gi-docgen
 		dev-util/gtk-doc
 	)
+	man? (
+		$(python_gen_cond_dep 'dev-python/argparse-manpage[${PYTHON_USEDEP}]')
+	)
 	test? (
 		dev-util/umockdev
-		dev-python/python-dbusmock
 		$(python_gen_cond_dep '
 			dev-python/pygobject:3[${PYTHON_USEDEP}]
 			dev-python/python-dbusmock[${PYTHON_USEDEP}]
 		')
+	)
+	zsh-completion? (
+		$(python_gen_cond_dep '>=dev-python/shtab-1.7.0[${PYTHON_USEDEP}]')
 	)
 "
 
@@ -54,18 +59,24 @@ python_check_deps() {
 	else
 		python_has_version "dev-python/pygobject:3[${PYTHON_USEDEP}]"
 	fi
+
+	if use bash-completion || use zsh-completion; then
+		python_has_version ">=dev-python/shtab-1.7.0[${PYTHON_USEDEP}]"
+	fi
+
+	use man && python_has_version "dev-python/argparse-manpage[${PYTHON_USEDEP}]"
 }
 
 src_configure() {
 	local emesonargs=(
-		-Dsystemdsystemunitdir="$(systemd_get_systemunitdir)"
 		-Dpylint=disabled
-		-Dmanpage=disabled
-		$(meson_enable bash-completion bashcomp)
-		$(meson_enable zsh-completion zshcomp)
+		-Dsystemdsystemunitdir="$(systemd_get_systemunitdir)"
+		$(meson_feature bash-completion bashcomp)
 		$(meson_use gtk-doc gtk_doc)
+		$(meson_feature man manpage)
 		$(meson_use test tests)
 	)
+	use zsh-completion && emesonargs+=(-Dzshcomp="$(get_zshcompdir)")
 	meson_src_configure
 }
 
