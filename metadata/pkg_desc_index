@@ -38,7 +38,9 @@ dev-lua/luv 1.36.0.0: Bare libuv bindings for lua
 dev-python/awscrt 0.19.1: Python bindings for the AWS Common Runtime
 dev-python/jinja2 3.1.6-r1: A full-featured template engine for Python
 dev-python/pycairo 1.27.0: Python bindings for the cairo library
+dev-python/pygobject 3.50.0: Python bindings for GObject Introspection
 dev-python/pynvim 0.4.2: Python client for Neovim
+dev-python/shtab 1.7.1: Automagic shell tab completion for Python CLI applications
 dev-util/android-studio 2024.2.1.12-r1: Android development environment based on IntelliJ IDEA
 dev-util/clion 2020.3.1-r1: A complete toolset for C and C++ development
 dev-util/rust-analyzer 20220808: Modular compiler frontend for the Rust language
@@ -77,13 +79,14 @@ sci-libs/or-tools 9.6: Google's Operations Research tools
 sci-libs/scip 8.0.3: SCIP - Solving Constraint Integer Programs
 sci-libs/soplex 6.0.3: Sequential object-oriented simPlex
 sys-apps/brightnessctl 0.5.1: A cli tool to control display brightness
+sys-apps/fwupd 2.0.3: Aims to make updating firmware on Linux automatic, safe and reliable
 sys-auth/authenticator 4.4.0: Generate Two-Factor Codes
 sys-auth/pambase 20220214: PAM base configuration files
 sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system-wide services
 sys-cluster/flux 2.1.1: Flux is a tool for keeping Kubernetes clusters in sync
 sys-cluster/minikube 1.31.2: Single Node Kubernetes Cluster
 sys-libs/glibc 2.34-r10: GNU libc C library
-sys-power/power-profiles-daemon 0.21: Makes power profiles handling available over D-Bus
+sys-power/power-profiles-daemon 0.30: Makes power profiles handling available over D-Bus
 virtual/opengl 7.0-r2: Virtual for OpenGL implementation
 virtual/rust 1.73.0_beta: Virtual for Rust language compiler
 www-apps/gitlab 16.4.0: The gitlab and gitaly parts of the GitLab DevOps platform
