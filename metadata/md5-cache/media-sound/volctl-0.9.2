@@ -1,17 +1,17 @@
-BDEPEND=test? ( media-sound/pulseaudio dev-python/pygobject >=dev-python/pytest-7.4.4[python_targets_pypy3(-)?,python_targets_python3_10(-)?,python_targets_python3_11(-)?] ) python_targets_pypy3? ( dev-lang/pypy:3.10=[symlink] ) python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) >=dev-python/setuptools-78.1.0[python_targets_pypy3(-)?,python_targets_python3_10(-)?,python_targets_python3_11(-)?]
+BDEPEND=test? ( media-sound/pulseaudio dev-python/pygobject >=dev-python/pytest-7.4.4[python_targets_python3_11(-)?] ) python_targets_python3_11? ( dev-lang/python:3.11 ) >=dev-python/setuptools-78.1.0[python_targets_python3_11(-)?]
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
 DEPEND=media-sound/pulseaudio dev-python/pygobject dev-libs/glib:2
 DESCRIPTION=Per-application volume control and OSD for Linux desktops.
 EAPI=7
 HOMEPAGE=https://buzz.github.io/volctl/
 INHERIT=distutils-r1 gnome2-utils
-IUSE=test python_targets_pypy3 python_targets_python3_10 python_targets_python3_11
+IUSE=test python_targets_python3_11
 KEYWORDS=amd64 x86
 LICENSE=GPL-2
-RDEPEND=media-sound/pulseaudio dev-python/pygobject python_targets_pypy3? ( dev-lang/pypy:3.10=[symlink] ) python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 )
-REQUIRED_USE=|| ( python_targets_pypy3 python_targets_python3_10 python_targets_python3_11 )
+RDEPEND=media-sound/pulseaudio dev-python/pygobject python_targets_python3_11? ( dev-lang/python:3.11 )
+REQUIRED_USE=|| ( python_targets_python3_11 )
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/buzz/volctl/archive/v0.9.2.tar.gz -> volctl-0.9.2.tar.gz
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multilib	b2a329026f2e404e9e371097dda47f96	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	eapi8-dosym	5ac4857ad078256d939c44f7c64197a9	python-utils-r1	974462533ec80cd68e5f366ad8a86002	python-r1	0e15b2ab9cfc87d7474678201d6bca38	distutils-r1	3641642ea51cdadc1d1ea0bb8404ae89	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	gnome2-utils	a8cf148ec7f5ae0b1f1d33ae5f7f9e88
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multilib	b2a329026f2e404e9e371097dda47f96	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	eapi8-dosym	5ac4857ad078256d939c44f7c64197a9	python-utils-r1	b6ad054ea5bb201ed2fec9cac7a8d12b	python-r1	0e15b2ab9cfc87d7474678201d6bca38	distutils-r1	2a874f6b13be509cff13de8e37085386	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	gnome2-utils	a8cf148ec7f5ae0b1f1d33ae5f7f9e88
 _md5_=397ea94c82e55582f26edf70ff33b606
