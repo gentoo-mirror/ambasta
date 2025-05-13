@@ -10,33 +10,9 @@ dev-db/postgresql:llvm - Add support for llvm JIT engine
 dev-db/postgresql:server - Disable to build and install the clients and libraries only.
 dev-db/postgresql:uuid - Enable server side UUID generation (via dev-libs/ossp-uuid).
 dev-util/clion:custom-jdk - Install and use IntelliJ's custom JRE.
-media-libs/libplacebo:glslang - Use dev-util/glslang to compile GLSL
-media-libs/libplacebo:lcms - Add support for color management via media-libs/lcms
-media-libs/libplacebo:shaderc - Use media-libs/shaderc to compile GLSL
-media-libs/libplacebo:vulkan - Add support for the vulkan graphics API
 media-libs/noise-suppression-for-voice:lv2 - Enable the LV2 plugin
 media-libs/noise-suppression-for-voice:vst - Enable the VST plugin
 media-libs/noise-suppression-for-voice:vst3 - Enable the VST3 plugin
-media-video/mpv:archive - Enable support for various archive formats via app-arch/libarchive
-media-video/mpv:bluray - Enable playback of Blu-ray filesystems
-media-video/mpv:cli - Build mpv CLI player
-media-video/mpv:cplugins - Enable C plugins support
-media-video/mpv:cuda - Enable hardware video decoding via Nvidia CUDA
-media-video/mpv:drm - Enable Kernel Mode Setting / Direct Rendering Manager based video output
-media-video/mpv:egl - Enable support for various EGL-based video outputs / backends
-media-video/mpv:gamepad - Enable gamepad input support
-media-video/mpv:gbm - Enable Graphics Buffer Manager based EGL video backend
-media-video/mpv:jpeg - Enable support for saving screenshots in JPEG format
-media-video/mpv:libmpv - Build mpv shared library
-media-video/mpv:lua - Enable Lua scripting, OSC (On Screen Controller) GUI and net-misc/youtube-dl hook-script
-media-video/mpv:opengl - Enable support for various OpenGL-based video backends
-media-video/mpv:raspberry-pi - Enable support for the Raspberry Pi
-media-video/mpv:rubberband - Enable high quality pitch correction via media-libs/rubberband
-media-video/mpv:sdl - Enable media-libs/libsdl2 based video and audio outputs (Note: these outputs exist for compatibility reasons only, avoid if possible)
-media-video/mpv:tools - Install extra tools: mpv_identify.sh, mpv_idet.sh, and umpv
-media-video/mpv:uchardet - Enable subtitles charset discovery via app-i18n/uchardet
-media-video/mpv:vulkan - Enable support for various Vulkan-based video backends
-media-video/mpv:zimg - Enable libzimg support (for vf_fingerprint)
 media-video/pipewire:jack - Enable SPA JACK plugin and emulation to be able to run JACK applications on top of PipeWire
 media-video/pipewire:pulseaudio - Enable emulation to be able to run PulseAudio applications on top of PipeWire
 media-video/pipewire:vulkan - Enable vulkan spa plugin integration
