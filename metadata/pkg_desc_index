@@ -63,7 +63,6 @@ media-libs/fcft 2.4.5: A simple library for font loading and glyph rasterization
 media-libs/mesa 24.2.7 24.2.8: OpenGL-like graphic library for Linux
 media-libs/noise-suppression-for-voice 1.10: A real-time noise suppression plugin for voice
 media-sound/easyeffects 6.1.0: Limiter, auto volume and many other plugins for PipeWire applications
-media-sound/volctl 0.9.2: Per-application volume control and OSD for Linux desktops.
 media-video/pipewire 0.3.21: Multimedia processing graphs
 net-im/fractal 5_alpha1: Matrix messaging app for GNOME written in Rust
 net-im/signal-cli-bin 0.13.5: Send and receive messages of Signal Messenger over a command line interface
