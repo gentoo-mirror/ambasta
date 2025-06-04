@@ -1,5 +1,4 @@
 app-admin/awscli 2.13.22: Universal Command Line Environment for AWS
-app-admin/webapp-config 1.55-r2: Gentoo's installer for web-based applications
 app-containers/crun 1.11.2: A fast and low-memory footprint OCI Container Runtime fully written in C
 app-crypt/seahorse 43.0-r3: Manage your passwords and encryption keys
 app-editors/neovim 0.8.0_pre: Vim-fork focused on extensibility and agility
@@ -13,7 +12,6 @@ dev-cpp/trantor 1.5.21: Non-blocking I/O tcp network lib based on c++14/17
 dev-db/pg_qualstats 2.1.0: A PostgreSQL extension for collecting statistics about predicates, helping find what indices are missing
 dev-db/postgresql 16.0: PostgreSQL RDBMS
 dev-go/gopls 0.14.0: "Go please" is the official Go language server
-dev-java/java-config 2.3.1-r1: Java environment configuration query tool
 dev-lang/opa 0.65.0: 
 dev-libs/aws-c-auth 0.7.4: AWS C99 library implementation of AWS client-side authentication
 dev-libs/aws-c-cal 0.6.2: AWS Crypto Abstraction Layer
