@@ -2,7 +2,6 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-app-admin/webapp-config:portage - Propagate python_targets dependencies to sys-apps/portage
 app-containers/crun:bpf - Enable in Kernel, eBPF (enhanced Berkley Packet Filter) support for managing device controllers.
 app-containers/crun:criu - Enable CRIU based checkpoint/restore support
 app-crypt/seahorse:ldap - Enable seahorse to manipulate GPG keys on a LDAP server.
