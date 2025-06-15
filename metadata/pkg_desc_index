@@ -69,6 +69,7 @@ net-libs/nodejs 21.7.1: A JavaScript runtime built on Chrome's V8 JavaScript eng
 net-misc/kafka-bin 3.1.0-r1: A high-throughput distributed messaging system
 net-print/foomatic-db 4.0.20241110: Printer information files for foomatic-db-engine to generate ppds
 net-print/foomatic-db-ppds 4.0.20241110: linuxprinting.org PPD files for postscript printers
+net-wireless/overskride 0.6.2: A Bluetooth and Obex client that is straight to the point, DE/WM agnostic
 sci-libs/HiGHS 1.8.0: high performance software for linear optimization
 sci-libs/or-tools 9.6: Google's Operations Research tools
 sci-libs/scip 8.0.3: SCIP - Solving Constraint Integer Programs
