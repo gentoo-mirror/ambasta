@@ -169,7 +169,7 @@ CRATES="
 	winnow@0.5.39
 "
 
-inherit cargo gnome2-utils meson rust
+inherit cargo gnome2-utils meson
 
 RUST_MIN_VER="1.71.1"
 
