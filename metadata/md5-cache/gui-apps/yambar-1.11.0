@@ -11,4 +11,4 @@ RDEPEND=app-alternatives/sh json? ( dev-libs/json-c ) dev-libs/libyaml dev-libs/
 SLOT=0
 SRC_URI=https://codeberg.org/dnkl/yambar/archive/1.11.0.tar.gz -> yambar-1.11.0.tar.gz
 _eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	bb392d69d55c48a5483d356933a26d57	meson	99466844dd8d4fcfb07578a76f5a9922	systemd	a964c0cbe818b5729da1dbfcee5be861
-_md5_=68cdbaf55ea0d500e43a06691009f1be
+_md5_=8deff8faf3427c1ad7e155ff6bd6ab05
