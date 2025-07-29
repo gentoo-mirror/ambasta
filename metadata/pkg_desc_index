@@ -2,7 +2,7 @@ app-containers/crun 1.11.2: A fast and low-memory footprint OCI Container Runtim
 app-crypt/seahorse 43.0-r3: Manage your passwords and encryption keys
 app-editors/neovim 0.8.0_pre: Vim-fork focused on extensibility and agility
 app-emulation/amazon-ssm-agent 3.3.1230.0: AWS SSM Agent
-app-misc/ddcutil 2.2.0: Program for querying and changing monitor settings
+app-misc/ddcutil 2.2.1: Program for querying and changing monitor settings
 dev-cpp/concurrentqueue 1.0.3: An industrial-strength lock-free queue for C++
 dev-cpp/drogon 1.9.7: C++14/17 based HTTP web application framework
 dev-cpp/gflags 2.2.2: Google's C++ argument parsing library
