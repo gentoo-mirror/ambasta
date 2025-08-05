@@ -33,7 +33,7 @@ dev-libs/sdbus-c++ 0.8.1: High-level C++ D-Bus library for Linux designed to pro
 dev-libs/tllist 1.0.5: A C header file only implementation of a typed linked list.
 dev-lua/StyLua 2.0.2-r1: An opinionated code formatter for Lua 5.1, Lua 5.2 and Luau
 dev-lua/luv 1.36.0.0: Bare libuv bindings for lua
-dev-ml/amazon-q-chat-cli 1.12.4: 
+dev-ml/amazon-q-developer-cli 1.13.1: Agentic chat experience in your terminal. Build applications using natural language.
 dev-python/awscrt 0.27.4: Python bindings for the AWS Common Runtime
 dev-python/jinja2 3.1.6-r1: A full-featured template engine for Python
 dev-python/pycairo 1.27.0: Python bindings for the cairo library
