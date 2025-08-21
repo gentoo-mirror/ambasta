@@ -35,32 +35,22 @@ dev-python/pycairo 1.27.0: Python bindings for the cairo library
 dev-python/pygobject 3.50.0: Python bindings for GObject Introspection
 dev-python/shtab 1.7.1: Automagic shell tab completion for Python CLI applications
 dev-util/android-studio 2024.2.1.12-r1: Android development environment based on IntelliJ IDEA
-dev-util/clion 2020.3.1-r1: A complete toolset for C and C++ development
 dev-util/rust-analyzer 20220808: Modular compiler frontend for the Rust language
-dev-vcs/gitlab-shell 14.28.0: SSH access for GitLab
-gnome-base/gsettings-desktop-schemas 40_beta: Collection of GSettings schemas for GNOME desktop
 gnome-base/librsvg 2.59.2-r2: Scalable Vector Graphics (SVG) rendering library
-gnome-extra/zenity 3.32.0: Tool to display dialogs from the commandline and shell scripts
 gui-apps/foot 1.13.1: Fast, lightweight and minimalistic Wayland terminal emulator
-gui-apps/slurp 1.3.2: Select a region in a Wayland compositor and print it to the standard output.
 gui-apps/wlgreet 0.5.0-r1: wlgreet
 gui-apps/wlr-randr 0.4.1: Utility to manage outputs of a Wayland compositor
 gui-apps/wofi 1.2.4: Wofi is a launcher for wlroots based wayland compositors
 gui-apps/yambar 1.11.0: Modular status panel for X11 and Wayland
 gui-libs/greetd 0.10.3: ipc based login daemon
-gui-libs/libadwaita 1.0.1: Building blocks for modern GNOME applications
-gui-libs/wlroots 0.15.1: Pluggable, composable, unopinionated modules for building a Wayland compositor
 gui-wm/sway 1.11: i3-compatible Wayland window manager
 gui-wm/tinywl 0.19.0: "minimum viable product" Wayland compositor based on wlroots
 media-fonts/cleartype-collection 20211204: Microsoft's font family provided by font service
 media-libs/fcft 2.4.5: A simple library for font loading and glyph rasterization
 media-libs/mesa 24.2.7 24.2.8: OpenGL-like graphic library for Linux
 media-libs/noise-suppression-for-voice 1.10: A real-time noise suppression plugin for voice
-media-sound/easyeffects 6.1.0: Limiter, auto volume and many other plugins for PipeWire applications
-media-video/pipewire 0.3.21: Multimedia processing graphs
 net-im/fractal 5_alpha1: Matrix messaging app for GNOME written in Rust
 net-im/signal-cli-bin 0.13.5: Send and receive messages of Signal Messenger over a command line interface
-net-irc/srain 1.3.0: Modern, beautiful IRC client written in GTK+ 3
 net-libs/nodejs 21.7.1: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-misc/kafka-bin 3.1.0-r1: A high-throughput distributed messaging system
 net-print/foomatic-db 4.0.20241110: Printer information files for foomatic-db-engine to generate ppds
@@ -73,12 +63,9 @@ sci-libs/soplex 6.0.3: Sequential object-oriented simPlex
 sys-apps/brightnessctl 0.5.1: A cli tool to control display brightness
 sys-apps/fwupd 2.0.3: Aims to make updating firmware on Linux automatic, safe and reliable
 sys-auth/authenticator 4.4.0: Generate Two-Factor Codes
-sys-auth/pambase 20220214: PAM base configuration files
-sys-auth/polkit 0.120-r1: Policy framework for controlling privileges for system-wide services
 sys-cluster/flux 2.1.1: Flux is a tool for keeping Kubernetes clusters in sync
 sys-cluster/minikube 1.31.2: Single Node Kubernetes Cluster
 sys-power/power-profiles-daemon 0.30: Makes power profiles handling available over D-Bus
 virtual/opengl 8: Virtual for OpenGL implementation
 virtual/rust 1.73.0_beta: Virtual for Rust language compiler
 www-apps/gitlab 16.4.0: The gitlab and gitaly parts of the GitLab DevOps platform
-x11-libs/vte 0.62.1: Library providing a virtual terminal emulator widget

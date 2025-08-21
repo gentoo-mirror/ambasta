@@ -8,17 +8,11 @@ app-crypt/seahorse:ldap - Enable seahorse to manipulate GPG keys on a LDAP serve
 dev-db/postgresql:llvm - Add support for llvm JIT engine
 dev-db/postgresql:server - Disable to build and install the clients and libraries only.
 dev-db/postgresql:uuid - Enable server side UUID generation (via dev-libs/ossp-uuid).
-dev-util/clion:custom-jdk - Install and use IntelliJ's custom JRE.
 media-libs/noise-suppression-for-voice:lv2 - Enable the LV2 plugin
 media-libs/noise-suppression-for-voice:vst - Enable the VST plugin
 media-libs/noise-suppression-for-voice:vst3 - Enable the VST3 plugin
-media-video/pipewire:jack - Enable SPA JACK plugin and emulation to be able to run JACK applications on top of PipeWire
-media-video/pipewire:pulseaudio - Enable emulation to be able to run PulseAudio applications on top of PipeWire
-media-video/pipewire:vulkan - Enable vulkan spa plugin integration
 net-misc/kafka-bin:connect - Install init for Kafka Connect Distributed mode
 net-misc/kafka-bin:internal-zookeeper - Use bundled local zookeeper instance
-sys-auth/polkit:elogind - Use sys-auth/elogind for session tracking
-sys-auth/polkit:systemd - Use sys-apps/systemd for session tracking
 sys-cluster/minikube:libvirt - Build plugin for kvm
 www-apps/gitlab:favicon - For the Custom Favicon to work, GraphicsMagick needs to be installed
 www-apps/gitlab:gitaly_git - Use the Git version provided by Gitaly
@@ -27,5 +21,3 @@ www-apps/gitlab:mail_room - Enables support for GitLab MailRoom
 www-apps/gitlab:pages - Pulls in the compatible version of www-apps/gitlab-pages
 www-apps/gitlab:prometheus - Enables support for the Prometheus monitoring system
 www-apps/gitlab:relative_url - Support for relative url
-x11-libs/vte:icu - Enable legacy charset support using dev-libs/icu
-x11-libs/vte:systemd - Support moving terminal child processes to their own systemd user scopes to avoid terminal getting killed due to child causing OOM

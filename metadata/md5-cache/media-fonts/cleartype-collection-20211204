@@ -1,7 +1,7 @@
 BDEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
 DEFINED_PHASES=install postinst postrm setup
 DESCRIPTION=Microsoft's font family provided by font service
-EAPI=7
+EAPI=8
 HOMEPAGE=https://docs.microsoft.com/en-us/typography/font-list/
 INHERIT=font
 IUSE=X
@@ -11,4 +11,4 @@ RESTRICT=binchecks strip
 SLOT=0
 SRC_URI=https://github.com/ambasta/cleartype-collection/archive/d1145f400523de1d19a3a0092d2df21074da085a.tar.gz -> cleartype-collection-20211204.tar.gz
 _eclasses_=font	aa113a3df9cd0a9693a1c1ee7c34a6eb
-_md5_=52e190e40378fd919ad325960d21fbcd
+_md5_=254f8afdd0eb1c086b3ab03380f27aa5
