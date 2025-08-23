@@ -1,16 +1,17 @@
 BDEPEND=virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.20.5
-DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=>=dev-libs/libuv-1.32.0:= luajit? ( dev-lang/luajit:3 ) !luajit? ( dev-lang/lua )
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=lua_single_target_luajit? ( dev-lang/luajit:= ) lua_single_target_lua5-1? ( dev-lang/lua:5.1 ) lua_single_target_lua5-3? ( dev-lang/lua:5.3 ) lua_single_target_lua5-4? ( dev-lang/lua:5.4 ) >=dev-libs/libuv-1.51:=
 DESCRIPTION=Bare libuv bindings for lua
 EAPI=8
 HOMEPAGE=https://github.com/luvit/luv
-INHERIT=cmake unpacker
-IUSE=luajit test
-KEYWORDS=amd64 ~arm ~arm64 x86
+INHERIT=cmake flag-o-matic lua-single unpacker
+IUSE=test lua_single_target_luajit lua_single_target_lua5-1 lua_single_target_lua5-3 lua_single_target_lua5-4
+KEYWORDS=amd64 ~arm arm64 ~ppc ~ppc64 ~riscv x86 ~x64-macos
 LICENSE=Apache-2.0 MIT
-RDEPEND=>=dev-libs/libuv-1.32.0:= luajit? ( dev-lang/luajit:3 ) !luajit? ( dev-lang/lua )
+RDEPEND=lua_single_target_luajit? ( dev-lang/luajit:= ) lua_single_target_lua5-1? ( dev-lang/lua:5.1 ) lua_single_target_lua5-3? ( dev-lang/lua:5.3 ) lua_single_target_lua5-4? ( dev-lang/lua:5.4 ) >=dev-libs/libuv-1.51:=
+REQUIRED_USE=^^ ( lua_single_target_luajit lua_single_target_lua5-1 lua_single_target_lua5-3 lua_single_target_lua5-4 )
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://github.com/luvit/luv/archive/1.51.0-1.tar.gz -> luv-1.51.0.1.tar.gz
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	unpacker	3b4ee72d1e2e0374fd8cd3eddfa00627
-_md5_=cd6c1c8e791e2deb5918ebffe39b169e
+SRC_URI=https://github.com/luvit/luv/archive/1.51.0-1.tar.gz -> luv-1.51.0.1.tar.gz https://github.com/keplerproject/lua-compat-5.3/archive/v0.14.4.tar.gz -> luv-lua-compat-0.14.4.tar.gz
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	460729dc36f68cf03b044bc1d367e34a	lua-utils	7c89927eda6f21c4c48136247077ab37	lua-single	75fe955a36b18e199213c8739eaebdbb	unpacker	3b4ee72d1e2e0374fd8cd3eddfa00627
+_md5_=20a67d7fbd4d7965a5102428510ca40c
