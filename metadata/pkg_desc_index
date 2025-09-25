@@ -66,7 +66,7 @@ sys-apps/brightnessctl 0.5.1: A cli tool to control display brightness
 sys-apps/fwupd 2.0.3: Aims to make updating firmware on Linux automatic, safe and reliable
 sys-auth/authenticator 4.4.0: Generate Two-Factor Codes
 sys-cluster/flux 2.1.1: Flux is a tool for keeping Kubernetes clusters in sync
-sys-cluster/minikube 1.31.2: Single Node Kubernetes Cluster
+sys-cluster/minikube 1.37.0: Local kubernetes clusters for learning and development
 sys-power/power-profiles-daemon 0.30: Makes power profiles handling available over D-Bus
 virtual/opengl 8: Virtual for OpenGL implementation
 virtual/rust 1.73.0_beta: Virtual for Rust language compiler
